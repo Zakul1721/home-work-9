@@ -64,22 +64,25 @@ h2 {
 
 .header {
   background-color: var(--color-grey-light);
-  min-height: 700px;
-  padding-top: 80px;
+  padding-top: 69px;
   padding-bottom: 141px;
 }
 
 .navbar {
-  margin-bottom: 162px;
+  margin-bottom: 141px;
 }
 .navbar__list {
   display: flex;
-  gap: 45px;
+  gap: 27px;
+  margin-left: -0.75em;
 }
 .navbar__item {
 }
 .navbar__link {
+  display: block;
   letter-spacing: var(--letter-spacing);
+  padding: 0.5em 0.75em;
+  text-transform: uppercase;
 }
 .navbar__link--active {
   color: var(--color-primary);
@@ -92,10 +95,11 @@ h2 {
   max-width: var(--container-secondary);
 }
 .hero__title {
-  margin-bottom: 60px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 .hero__description {
-  margin-bottom: 65px;
+  margin-bottom: 57px;
   color: var(--color-secondary);
 }
 .hero__button {
