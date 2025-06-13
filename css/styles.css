@@ -1,0 +1,61 @@
+root: {
+  --font-family: 'Roboto', sans-serif;
+  --font-size: 16px;
+  --font-weight: 400;
+  --line-height: 1.64;
+  --line-height-sm: 1.4;
+  --container-primary: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html{
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: var(--line-height-sm);
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: var(--line-height-sm);
+  font-weight: 500;
+}
+.container{
+  width: mi(100% - 40px, var(--container-primary));
+  margin-inline: auto;
+}
+
+.header {
+}
+.container {
+}
+.navbar {
+}
+.navbar__list {
+}
+.navbar__item {
+}
+.navbar__link {
+}
+.navbar__link--active {
+}
+.hero {
+}
+.hero__title {
+}
+.hero__description {
+}
+.hero__button {
+}
