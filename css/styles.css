@@ -67,14 +67,14 @@ h2 {
   margin-inline: auto;
 }
 
-.visually-hidden{
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
   border: 0;
   margin: -1px;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   overflow: hidden;
@@ -147,9 +147,11 @@ h2 {
   padding-bottom: 100px;
   text-align: center;
 }
+
 .section__title {
   margin-bottom: 36px;
 }
+
 .section__description {
   color: var(--color-secondary);
 }
@@ -165,7 +167,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: var(--gap-xl);
-  
+
 }
 
 .experience {
@@ -179,19 +181,23 @@ h2 {
   display: flex;
   gap: var(--gap);
 }
+
 .experience__item-description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   line-height: 1;
 }
+
 .experience__item-number {
   font-size: 1.3125rem;
   font-weight: 500;
 }
+
 .experience__item-picture {
   order: -1;
 }
+
 .experience__item-image {
   display: block;
 }
@@ -228,6 +234,7 @@ h2 {
   font-weight: 500;
   margin-bottom: 5px;
 }
+
 .footer__description {
   font-size: 0.8125rem;
 }
