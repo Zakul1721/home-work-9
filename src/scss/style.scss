@@ -1,30 +1,5 @@
-:root {
-  --color-black: #000000;
-  --color-primary: #34547a;
-  --color-secondary: #727272;
-  --color-white: #ffffff;
-  --color-grey-light: #edeef0;
-
-  --font-family: 'Roboto', sans-serif;
-  --font-size: 16px;
-  --font-weight: 400;
-
-  --letter-spacing: 0.1em;
-
-  --line-height: 1.64;
-  --line-height-sm: 1.4;
-
-  --container-primary: 1100px;
-  --container-secondary: 540px;
-
-  --gap: 20px;
-  --gap-sm: calc(var(--gap) * 0.5);
-  /* 10px */
-  --gap-lg: calc(var(--gap) * 1.5);
-  /* 30px */
-  --gap-xl: calc(var(--gap) * 2);
-  /* 40px */
-}
+@use 'normalize.css';
+@use 'preset' as *;
 
 * {
   box-sizing: border-box;
@@ -34,36 +9,36 @@
 }
 
 html {
-  font-family: var(--font-family);
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
 }
 
 h1 {
   font-size: 3rem;
   font-weight: 500;
-  line-height: var(--line-height-sm);
+  line-height: $line-height-sm;
 }
 
 a {
   text-decoration: none;
-  color: var(--color-black);
+  color: $color-black;
 }
 
 h2 {
   font-size: 2rem;
-  line-height: var(--line-height-sm);
+  line-height: $line-height-sm;
   font-weight: 500;
 }
 
 .container {
-  width: min(100% - var(--gap-xl), var(--container-primary));
+  width: min(100% - $gap-xl, $container-primary);
   margin-inline: auto;
 }
 
 .container-sm {
-  width: min(100% - var(--gap-xl), var(--container-secondary));
+  width: min(100% - $gap-xl, $container-secondary);
   margin-inline: auto;
 }
 
@@ -83,7 +58,7 @@ h2 {
 }
 
 .header {
-  background-color: var(--color-grey-light);
+  background-color: $color-grey-light;
   padding-top: 69px;
   padding-bottom: 141px;
 }
@@ -101,13 +76,13 @@ h2 {
 
 .navbar__link {
   display: block;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: $letter-spacing;
   padding: 0.5em 0.75em;
   text-transform: uppercase;
 }
 
 .navbar__link--active {
-  color: var(--color-primary);
+  color: $color-primary;
   font-weight: 500;
 }
 
@@ -115,7 +90,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: var(--container-secondary);
+  max-width: $container-secondary;
 }
 
 .hero__title {
@@ -125,7 +100,7 @@ h2 {
 
 .hero__description {
   margin-bottom: 57px;
-  color: var(--color-secondary);
+  color: $color-secondary;
 }
 
 .hero__button {
@@ -135,9 +110,9 @@ h2 {
   padding: 0.5em;
   min-width: 225px;
   min-height: 65px;
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  letter-spacing: var(--letter-spacing);
+  background-color: $color-primary;
+  color: $color-white;
+  letter-spacing: $letter-spacing;
 }
 
 .section {
@@ -151,30 +126,30 @@ h2 {
 }
 
 .section__description {
-  color: var(--color-secondary);
+  color: $color-secondary;
 }
 
 .about {
-  background-color: var(--color-white);
+  background-color: $color-white;
 }
 
 .experience__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: var(--gap-xl);
+  gap: $gap-xl;
 }
 
 .experience {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: $color-primary;
+  color: $color-white;
 }
 
 .experience__item {
   display: flex;
-  gap: var(--gap);
+  gap: $gap;
 }
 
 .experience__item-description {
@@ -198,12 +173,12 @@ h2 {
 }
 
 .process {
-  background-color: var(--color-grey-light);
+  background-color: $color-grey-light;
   padding-bottom: 57px;
 }
 
 .video {
-  background-color: var(--color-grey-light);
+  background-color: $color-grey-light;
   padding-bottom: 100px;
 }
 
@@ -217,8 +192,8 @@ h2 {
 }
 
 .footer {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: $color-primary;
+  color: $color-white;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -252,14 +227,13 @@ h2 {
   }
 
   .experience__container {
-    gap: var(--gap-lg);
+    gap: $gap-lg;
   }
 
   .experience {
     padding-top: 70px;
     padding-bottom: 70px;
   }
-
 
   .experience__item-number {
     font-size: 1.125rem;
@@ -281,7 +255,7 @@ h2 {
 
 @media (max-width: 768px) {
   .navbar__list {
-    gap: var(--gap-xl);
+    gap: $gap-xl;
   }
 
   .hero__title {
@@ -375,11 +349,11 @@ h2 {
   }
 
   .experience__container {
-    gap: var(--gap-sm);
+    gap: $gap-sm;
   }
 
   .experience__item {
-   gap: 10px;
+    gap: 10px;
   }
 
   .experience__item-number {
@@ -395,21 +369,21 @@ h2 {
     height: 40px;
   }
 
-  .footer{
+  .footer {
     padding-top: 15px;
     padding-bottom: 15px;
   }
 
   .footer__title {
-  font-size: 0.875rem;
-  font-weight: 400;
-  margin-bottom: 5px;
-  text-align: center;
-}
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+    text-align: center;
+  }
 
-.footer__description {
-  font-size: 0.4rem;
-  text-align: center;
-  letter-spacing: 0.15em;
-}
+  .footer__description {
+    font-size: 0.4rem;
+    text-align: center;
+    letter-spacing: 0.15em;
+  }
 }

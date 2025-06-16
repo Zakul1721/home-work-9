@@ -1,0 +1,25 @@
+$ul: 1380px; // Ultra Large
+$xl: 1200px; // Extra Large
+$lg: 992px; // Large
+$md: 768px; // Medium
+$sm: 576px; // Small
+$xs: 480px; // Extra Small
+$vs: 420px; // Very Small
+$us: 360px; // Ultra Small
+
+$font-size: 16px;
+$font-family: 'Roboto', sans-serif;
+$font-weight: 400;
+
+$letter-spacing: 0.1em;
+
+$line-height: 1.64;
+$line-height-sm: 1.4;
+
+$container-primary: 1100px;
+$container-secondary: 540px;
+
+$gap: 20px;
+$gap-sm: calc($gap * 0.5); /* 10px */
+$gap-lg: calc($gap * 1.5); /* 30px */
+$gap-xl: calc($gap * 2); /* 40px */
