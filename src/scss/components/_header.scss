@@ -1,0 +1,8 @@
+@use '../presets' as *;
+@use '../mixins' as *;
+
+.header {
+  background-color: $color-grey-light;
+  padding-top: 69px;
+  padding-bottom: 141px;
+}

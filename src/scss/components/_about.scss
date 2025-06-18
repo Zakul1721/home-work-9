@@ -1,0 +1,10 @@
+@use '../presets' as *;
+@use '../mixins' as *;
+
+// Компонент про нас
+
+.about {
+  background-color: $color-white;
+
+  @include section;
+}
