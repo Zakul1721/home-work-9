@@ -9,24 +9,72 @@
   max-width: $container-secondary;
 
   &__title {
-  margin-top: 0;
-  margin-bottom: 40px;
- }
+    margin-top: 0;
+    margin-bottom: 40px;
 
- &__description {
-  margin-bottom: 57px;
-  color: $color-secondary;
- }
+    @include md {
+      font-size: 2rem;
+    }
 
- &__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5em;
-  min-width: 225px;
-  min-height: 65px;
-  background-color: $color-primary;
-  color: $color-white;
-  letter-spacing: $letter-spacing;
- }
+    @include ul {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__description {
+    margin-bottom: 57px;
+    color: $color-secondary;
+
+    @include md {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    @include sm {
+      font-size: 0.875rem;
+      margin-bottom: 20px;
+    }
+
+    @include ul {
+      font-size: 0.875rem;
+      margin-bottom: 15px;
+    }
+  }
+
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    min-width: 225px;
+    min-height: 65px;
+    background-color: $color-primary;
+    color: $color-white;
+    letter-spacing: $letter-spacing;
+
+    @include lg {
+      min-width: 200px;
+      min-height: 55px;
+    }
+
+    @include md {
+      min-width: 160px;
+      min-height: 50px;
+      letter-spacing: 0.05em;
+      font-size: 14px;
+    }
+
+    @include sm {
+      min-width: 150px;
+      min-height: 45px;
+    }
+
+    @include ul {
+      min-width: 130px;
+      min-height: 40px;
+      letter-spacing: normal;
+      font-size: 14px;
+    }
+  }
 }

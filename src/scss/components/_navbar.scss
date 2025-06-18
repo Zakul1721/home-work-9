@@ -6,11 +6,34 @@
 .navbar {
   margin-bottom: 141px;
 
+  @include ul {
+    margin-bottom: 70px;
+  }
+
   &__list {
     flex-wrap: wrap;
     display: flex;
     gap: 27px;
     margin-left: -0.75em;
+
+    @include lg {
+      gap: 30px;
+    }
+
+    @include md {
+      gap: $gap-xl;
+    }
+
+    @include sm {
+      gap: 20px;
+    }
+
+    @include ul {
+      gap: 15px;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
   }
 
   &__link {

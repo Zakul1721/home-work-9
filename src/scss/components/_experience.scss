@@ -9,16 +9,49 @@
   background-color: $color-primary;
   color: $color-white;
 
+  @include lg {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @include md {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include ul {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   &__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: $gap-xl;
+
+    @include lg {
+      gap: $gap-lg;
+    }
+
+    @include ul {
+      gap: $gap-sm;
+    }
   }
 
   &__item {
     display: flex;
     gap: $gap;
+
+    @include md {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    @include ul {
+      gap: 10px;
+    }
 
     &-description {
       display: flex;
@@ -30,6 +63,20 @@
     &-number {
       font-size: 1.3125rem;
       font-weight: 500;
+
+      @include lg {
+        font-size: 1.125rem;
+      }
+    }
+
+    @include ul {
+      font-size: 0.875rem;
+    }
+
+    @include ul {
+      &-label {
+        font-size: 12px;
+      }
     }
 
     &-picture {
@@ -38,6 +85,16 @@
 
     &-image {
       display: block;
+
+      @include lg {
+        width: 90%;
+        height: 90%;
+      }
+
+      @include ul {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 }

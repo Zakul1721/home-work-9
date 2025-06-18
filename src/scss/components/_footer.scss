@@ -9,16 +9,31 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
- &__title {
-  font-size: 1.3125rem;
-  font-weight: 500;
-  margin-bottom: 5px;
- }
+  @include ul {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
- &__description {
-  font-size: 0.8125rem;
- }
+  &__title {
+    font-size: 1.3125rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+    @include ul {
+      font-size: 0.875rem;
+      font-weight: 400;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    font-size: 0.8125rem;
+
+    @include ul {
+      font-size: 0.4rem;
+      text-align: center;
+      letter-spacing: 0.15em;
+    }
+  }
 }
-
-
-

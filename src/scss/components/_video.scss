@@ -12,5 +12,9 @@
     aspect-ratio: 16/9;
     border: 0;
     min-height: 200px;
+
+    @include lg {
+      min-height: 150px;
+    }
   }
 }

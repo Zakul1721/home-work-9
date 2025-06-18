@@ -5,4 +5,9 @@
   background-color: $color-grey-light;
   padding-top: 69px;
   padding-bottom: 141px;
+
+  @include ul {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
 }

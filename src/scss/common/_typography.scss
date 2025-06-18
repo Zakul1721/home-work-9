@@ -1,16 +1,29 @@
 @use '../presets' as *;
+@use '../mixins' as *;
 
 // Типографіка
 h1 {
   font-size: 3rem;
   font-weight: 500;
   line-height: $line-height-sm;
+
+  @include lg {
+    font-size: 2.5rem;
+  }
 }
 
 h2 {
   font-size: 2rem;
   line-height: $line-height-sm;
   font-weight: 500;
+
+  @include lg {
+    font-size: 1.875rem;
+  }
+
+  @include sm {
+    font-size: 1.5rem;
+  }
 }
 
 a {
